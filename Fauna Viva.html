@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fauna Viva: protejamos a los animales silvestres</title>
+  <meta name="description"
+    content="Proyecto web sobre la protección de los animales: por qué importan, especies amenazadas y cómo podemos ayudarlas.">
+  <link rel="stylesheet" href="estilos.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#inicio">Fauna<span>Viva</span></a>
+      <button id="burger" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+      <nav id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#importancia">Importancia</a></li>
+          <li><a href="#especies">Especies</a></li>
+          <li><a href="#ayudar">Cómo ayudar</a></li>
+          <li><a href="#video">Video</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <div class="wrap">
+        <div>
+          <span class="author">Por: Yancely Danet Solano</span>
+          <h1 id="titulo">Fauna Viva: <em>cada animal cuenta</em></h1>
+          <p>Los animales silvestres mantienen sanos los bosques, los ríos y los océanos. Este proyecto explica por qué
+            debemos protegerlos y qué podemos hacer desde casa.</p>
+          <a class="btn" href="#importancia">Empezar a explorar</a>
+        </div>
+        <img alt="Ilustración de un zorro de pelaje naranja" width="340" height="340"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%231b2b22'/%3E%3Cpolygon points='40,30 80,80 30,100' fill='%23e8742a'/%3E%3Cpolygon points='160,30 120,80 170,100' fill='%23e8742a'/%3E%3Cpolygon points='30,100 100,185 170,100 150,70 100,80 50,70' fill='%23e8742a'/%3E%3Cpolygon points='65,120 100,185 135,120 100,135' fill='%23f6efe0'/%3E%3Ccircle cx='75' cy='100' r='6' fill='%23111'/%3E%3Ccircle cx='125' cy='100' r='6' fill='%23111'/%3E%3Cpolygon points='92,160 108,160 100,172' fill='%23111'/%3E%3C/svg%3E">
+      </div>
+    </section>
+
+    <section class="alt" id="importancia" aria-labelledby="t-imp">
+      <div class="wrap two">
+        <div>
+          <h2 id="t-imp">Por qué importan los animales</h2>
+          <h3>Un equilibrio que nos incluye</h3>
+          <p>Cada especie cumple una función. Las abejas y los colibríes polinizan, los búhos controlan roedores y los
+            depredadores evitan que otras poblaciones crezcan sin control.</p>
+          <p>Cuando una especie desaparece, la cadena se rompe y las consecuencias llegan también a las personas: menos
+            alimentos, agua menos limpia y ecosistemas más frágiles.</p>
+          <button class="btn" id="factBtn" type="button">Dato curioso</button>
+          <p id="fact" aria-live="polite"></p>
+        </div>
+        <img alt="Ilustración de un búho con grandes ojos amarillos" width="380" height="380"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%231b2b22'/%3E%3Cellipse cx='100' cy='118' rx='55' ry='70' fill='%238a6b4a'/%3E%3Cellipse cx='100' cy='140' rx='33' ry='42' fill='%23d9c3a0'/%3E%3Cpolygon points='55,50 78,78 48,86' fill='%238a6b4a'/%3E%3Cpolygon points='145,50 122,78 152,86' fill='%238a6b4a'/%3E%3Ccircle cx='78' cy='95' r='25' fill='%23efe9dc'/%3E%3Ccircle cx='122' cy='95' r='25' fill='%23efe9dc'/%3E%3Ccircle cx='78' cy='95' r='12' fill='%23ffb300'/%3E%3Ccircle cx='122' cy='95' r='12' fill='%23ffb300'/%3E%3Ccircle cx='78' cy='95' r='5' fill='%23111'/%3E%3Ccircle cx='122' cy='95' r='5' fill='%23111'/%3E%3Cpolygon points='92,108 108,108 100,128' fill='%23e8742a'/%3E%3C/svg%3E">
+      </div>
+    </section>
+
+    <section id="especies" aria-labelledby="t-esp">
+      <div class="wrap">
+        <h2 id="t-esp">Especies que necesitan protección</h2>
+        <p>Algunos animales de Colombia y del mundo enfrentan amenazas por la pérdida de su hábitat, la caza ilegal y el
+          tráfico de fauna.</p>
+        <div class="cards">
+          <article class="card"><span class="tag">Los Andes</span>
+            <h3>Cóndor andino</h3>
+            <p>Ave carroñera que limpia el ambiente. Es símbolo de Colombia y se reproduce muy lentamente.</p>
+          </article>
+          <article class="card"><span class="tag">Bosques de niebla</span>
+            <h3>Oso de anteojos</h3>
+            <p>El único oso de Sudamérica. Pierde territorio por la tala y la expansión agrícola.</p>
+          </article>
+          <article class="card"><span class="tag">Selvas y ríos</span>
+            <h3>Jaguar</h3>
+            <p>Gran felino que regula las poblaciones de presas. Sufre por la deforestación y los conflictos con
+              ganaderos.</p>
+          </article>
+          <article class="card"><span class="tag">Océanos</span>
+            <h3>Tortuga marina</h3>
+            <p>Viaja miles de kilómetros. Las redes de pesca y el plástico son sus mayores riesgos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="ayudar" aria-labelledby="t-ayu">
+      <div class="wrap">
+        <h2 id="t-ayu">Cómo podemos ayudar</h2>
+        <p>No hace falta ser científico. Pequeñas acciones, repetidas por muchas personas, protegen a los animales.</p>
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>No compres fauna silvestre</h3>
+              <p>Evita comprar animales o productos hechos con ellos. Así se frena el tráfico ilegal.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Reduce el plástico</h3>
+              <p>Reutiliza bolsas y botellas. El plástico termina en ríos y mares, donde daña a las especies.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Cuida los espacios naturales</h3>
+              <p>No dejes basura, no alimentes animales silvestres y respeta los senderos.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Adopta, no compres</h3>
+              <p>Si quieres una mascota, adopta. Hay muchos perros y gatos esperando un hogar.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="video" aria-labelledby="t-vid">
+      <div class="wrap">
+        <h2 id="t-vid">Mira y aprende</h2>
+        <p>Un video de NatureDocs para conocer más sobre la vida de los animales en la naturaleza Colombiana.</p>
+        <div class="video">
+
+          <!-- <iframe src="https://www.youtube.com/embed/TeAqcNWkRb4" title="Video de NatureDocs sobre animales"
+            loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/TeAqcNWkRb4?si=EwjpFdPlMnpX7Qj0&amp;controls=0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>Yancely Danet Solano</strong></p>
+      <p>Proyecto educativo para recordar que proteger a los animales es proteger nuestro propio futuro.</p>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.getElementById("burger"), menu = document.getElementById("menu");
+    burger.addEventListener("click", () => { const o = menu.classList.toggle("open"); burger.setAttribute("aria-expanded", o) });
+    menu.addEventListener("click", e => { if (e.target.tagName === "A") { menu.classList.remove("open"); burger.setAttribute("aria-expanded", "false") } });
+
+    const links = [...menu.querySelectorAll("a")];
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    }), { rootMargin: "-45% 0px -50% 0px" });
+    document.querySelectorAll("main section").forEach(s => io.observe(s));
+
+    const facts = [
+      "Los búhos vuelan casi sin hacer ruido gracias a sus plumas especiales.",
+      "El cóndor andino puede planear horas sin aletear.",
+      "Las tortugas marinas regresan a la playa donde nacieron para poner sus huevos.",
+      "Un jaguar tiene una de las mordidas más fuertes entre los felinos.",
+      "El oso de anteojos recibe su nombre por las manchas claras alrededor de sus ojos."];
+    let n = -1;
+    document.getElementById("factBtn").addEventListener("click", () => {
+      let i; do { i = Math.floor(Math.random() * facts.length) } while (i === n);
+      n = i; document.getElementById("fact").textContent = facts[i];
+    });
+  </script>
+</body>
+
+</html>
